@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site</title>
+  
+  <style>
+   .body{
+      background-image:url(https://i.gifer.com/5UdL.gif);
+     background-size:cover;
+    } 
+    
+   .k{
+     position:absolute;
+     right:10px;
+     bottom:500px;
+     height:990px;
+     border-radius:20px;
+   }
+   
+  .h1{
+    color:#be29ec;
+    font-family:cursive ;
+    text-align:center;
+    font-size:150px;
+  }
+  footer{
+    display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:800px; 
+  }
+.luas{
+  display:flex;
+  flex-direction:row;
+  transition: height 0.3s;
+ }
+ 
+.luas li{
+  margin-right:40px;
+  margin-top:1250px;
+} 
+
+.luas li :active{
+  height:300px;
+}
+  </style>
+</head>
+<body class= "body">
+  <img class ="k" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKBWBHLOBKsKprVqNVVCje2wX2CNb4c3ZGw&usqp=CAU">
+  
+  <h1 class="h1">Kokushibo</h1>
+</body>
+  <footer>
+    <ul class = "luas">
+<li><img height="250px" src = "https://i.pinimg.com/736x/74/0c/3a/740c3aae1649006da770885bcfd67280.jpg" ontouchstart = "toque()" onclick = "clique()"> </li>
+      <li><img height = "250px" src ="https://i.pinimg.com/736x/13/ea/4b/13ea4b0c8ce017e677727244b2bd13df.jpg" ontouchstart = "toque2()" onclick = "clique2()"> </li>
+      
+      <li><img height = "250px" src = "https://i.pinimg.com/736x/3f/a2/ea/3fa2ea3ed575f925711061f4c047896b.jpg" ontouchstart = "toque3()" ></li>
+    </ul>
+  </footer>
+  
+  <script>
+    function clique(){
+      var body = document.querySelector('.body')
+      body.style.backgroundImage = "url (https://i.gifer.com/5UdL.gif)";
+    }
+    
+    function toque(){
+      var body = document.querySelector('.body')
+      var img = document.querySelector('.k')
+      var h1 = document.querySelector('.h1')
+      img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKBWBHLOBKsKprVqNVVCje2wX2CNb4c3ZGw&usqp=CAU"
+      h1.style.color = "purple"
+      h1.innerHTML="Kokushibo"
+      body.style.backgroundImage = "url(https://i.gifer.com/5UdL.gif)";
+      
+    }
+    
+    function toque2(){
+            var body = document.querySelector('.body')
+            var h1 = document.querySelector('.h1')
+            var img = document.querySelector('.k')
+      img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUEA4lDrQQbGQSo9V_ky7Xv0_LcVqZAJ_pfA&usqp=CAU"
+      h1.style.color = "#DBF1FD"
+      h1.innerHTML="Douma"
+      body.style.backgroundImage = "url('https://i.pinimg.com/originals/7d/7c/79/7d7c79f57f2bf8fc2b43b9a5e5a2a96b.gif' )";
+    }
+    
+        function toque3(){
+            var body = document.querySelector('.body')
+            var h1 = document.querySelector('.h1')
+            var img = document.querySelector(".k")
+            img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfMtvRb8FrYlNE4LnsJWWRnoJ31OhNzjJzfA&usqp=CAU"
+            
+      
+      h1.innerHTML="Akaza"
+      h1.style.color = "blue"
+      body.style.backgroundImage = "url('https://media.indiedb.com/cache/images/games/1/41/40112/thumb_620x2000/Dojo_v2.gif')";
+    }
+    
+  </script>
+</html>
