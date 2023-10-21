@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+   <html lang="pt-BR">
+       <html>
+           <head>
+                <metacharset="UTF-8">
+           </head>
+           <header>
+             CONTADOR DE PALAVRAS GOD ROBERTO
+           </header>
+           <body>
+             <form name = "form_main">
+             <textarea type ="text" name = "text" id= "text" oninput = "contar()" ></textarea>
+            <h1 class = "resultado">Quantidade de caracteres:</h1>
+             <p1 class = "caracteres">0</p1>
+             </form>
+           </body>
+           <style>
+             header{
+               font-size: 150px;
+                font-family: cursive;
+                color:white;
+              
+             }
+            .resultado{
+                font-size:40px;
+                color:white;
+                font-family:fantasy;
+            }
+            .caracteres{
+              font-size:50px;
+              color:white;
+              position:absolute;
+              bottom: 1000px;
+              
+            }
+            body{
+               background-color:black;
+             }
+             
+            #text{
+               display:flex;
+               font-size:50px;
+               justify-content:center;
+             }
+           
+           </style>
+           <script>
+           function contar(){
+             
+             let text = document.form_main.text.value
+             
+             document.querySelector('.caracteres').innerText = text.length
+             
+           } 
+           </script>
+                         
+           </html>
