@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Olá!</title>
+</head>
+<body onload = "carregar()">
+    <header>
+        Olá! 
+    </header>
+    
+    <section>
+       <div id="msg">teste</div> 
+    </section>
+    
+    <footer>
+        
+    </footer>
+    
+    <style>
+        body{
+            background-color:#add8e6;
+        }
+        
+        header{
+            font-size:80px;
+            text-align:center;
+        }
+        
+        section{
+          background-color:white;
+            position :absolute;
+            bottom:1600px;
+            right:150px;
+            font-size:60px;
+            font-family:cursive;
+            color:black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px color:black;
+        } 
+        
+    </style>
+    
+    <script>
+        function carregar(){
+          var msg = document.getElementById('msg')
+          var data = new Date()
+          var hora = data.getHours()
+          var minutos = data.getMinutes()
+          msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos`} 
+    </script>
+</body>
+</html>
